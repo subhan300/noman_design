@@ -7,6 +7,8 @@ import bottomImage from '../../assets/images/IMG_6118 1.png'
 
 
 function BannerSub(props) {
+    const text = props.mainh1;
+    const newText = text.split('\n').map(str => <>{str}</>)
     return (
         <>
         <div className="section">
@@ -17,7 +19,7 @@ function BannerSub(props) {
                 <div className={`section_rightBx`}>
                     <div>
                         <h1>
-                            {props.mainh1}
+                            {newText}
                         </h1>
                         <p>
                             {props.para}

@@ -23,9 +23,9 @@ function index() {
       <Banner/>
       <BannerSub
         banner={subBanner}
-        mainh1="
-          Cucina Verace - <br/>
-          True Italian Cuisine"
+        mainh1=
+          {`Cucina Verace - \n
+          True Italian Cuisine`}
         para="
           La Stella represents more than just a restaurant concept.
           It is an immersive and truly authentic - verace - Italian
@@ -39,7 +39,8 @@ function index() {
       />
       <BannerSub
         banner={subBanner2}
-        mainh1="Le nostre origini - where we come from"
+        mainh1={`Le nostre origini - \n 
+          where we come from`}
         para="
           Lorem ipsum dolor sit amet, consectetur adipiscing 
           elit. Malesuada interdum aenean et volutpat commodo 
