@@ -12,8 +12,10 @@ import BannerSub from '../components/Home-screen/BannerSub'
 // sub banner assets imports
 import subBanner from '../assets/images/IMG_5334 1.png'
 import bottomImage from '../assets/images/IMG_6118 1.png'
-import subBanner2 from '../assets/images/5383002 1.png'
+import subBanner2 from "../assets/images/IMG_6113 1.png"
 import bottomImage2 from '../assets/images/IMG_6113 1.png'
+import Lepasta from "../components/lepasta_component/Lepasta_Component"
+import Address_component from "../components/address_component/address_component" 
 
 
 function index() {
@@ -58,8 +60,16 @@ function index() {
         lowerImage={bottomImage2}
         cname="reverse_row"
       />
+<<<<<<< HEAD
       
+=======
+      <br></br><br></br> <br></br><br></br>
+      <Address_component />
+      <Lepasta />
+
+>>>>>>> b2dd23ef5a4cd540ba578879da366ad871823731
     </div>
+
   )
 }
 
