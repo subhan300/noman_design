@@ -58,6 +58,7 @@ function index() {
         lowerImage={bottomImage2}
         cname="reverse_row"
       />
+      
     </div>
   )
 }

@@ -20,6 +20,7 @@
 .navbar .logo img {
     height: 100%;
     width: 100%;
+    cursor: pointer;
 }
 .nav__links ul {
     display: flex;
@@ -28,6 +29,7 @@
 .nav__links ul li {
     position: relative;
     list-style: none;
+    cursor: pointer;
 }
 .nav__links ul li span {
     position: relative;
@@ -47,6 +49,7 @@
     font-family: Calibri;
     text-transform: uppercase;
     margin-left: 16px;
+    cursor: pointer;
 }
 .nav__buttons button:nth-child(1) {
     background: transparent;
@@ -59,4 +62,66 @@
     border: none;
     outline: none;
     margin-right: 215px;
+}
+.toggle {
+    display: none;
+}
+@media (max-width:991px) {
+
+.navbar {
+    height: 60px;
+}
+.navbar .logo {
+    width: 76px;
+    height: 38px;
+    margin-left: 26px;
+}
+.menu {
+    position: fixed;
+    top: 57px;
+    left: 0;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    transition: 0.5s;
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.nav__links ul {
+    display: block;
+}
+.nav__links ul li {
+    margin: 20px;
+}
+.nav__buttons {
+    margin-left: auto;
+}
+.nav__buttons button:last-child {
+    margin-right: 20px;
+}
+.toggle {
+    border: 2px solid #dea118;
+    display: block;
+    padding: 8px 12px;
+    margin-right: 26px;
+}
+}
+@media (min-width:350px) and (max-width:800px) {
+    .logo {
+        margin-left: 10px;
+    }
+    .nav__buttons button{
+        width: 70px;
+        height: 36px;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .nav__buttons button:last-child {
+        margin-right: 10px;
+    }    
 }
