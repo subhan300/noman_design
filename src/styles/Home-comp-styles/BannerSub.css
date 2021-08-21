@@ -67,3 +67,36 @@
     width: 100%;
     height: 100%;
 }
+
+@media (max-width:991px) {
+    .sectionBx {
+        flex-direction: column-reverse;
+    }
+    .section_leftBx , .section_rightBx {
+        width: 100%;
+    }
+    .section_rightBx {
+        padding-bottom: 50px;
+    }
+    .section_rightBx div{
+        width: 100%;
+        padding-left: 0px;
+    }
+    .section_rightBx div h1 {
+        white-space: nowrap;
+    }
+    .section_leftBx img {
+        width: 100%;
+        height: 529px;
+    }
+    .section_bottom {
+        padding: 0 20px;
+    }
+    .vector {
+        top: 80%;
+    }
+    .vector img {
+        width: 70px;
+        height: 123px;
+    }
+}
