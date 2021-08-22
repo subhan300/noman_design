@@ -3,7 +3,7 @@ import '../styles/Global-comp-styles/index.css'
 import '../styles/Home-comp-styles/BannerSub.css'
 
 // global components
-import Navbar from '../components/Global-components/Navbar'
+
 
 // Home screen components
 import Banner from '../components/Home-screen/Banner'
@@ -17,6 +17,7 @@ import subBanner2 from "../assets/images/5383002 1.png"
 import bottomImage2 from '../assets/images/IMG_6113 1.png'
 import Lepasta from "../components/lepasta_component/Lepasta_Component"
 import Address_component from "../components/address_component/address_component"
+import Navbar from '../components/Global-components/Navbar'
 
 
 function index() {
@@ -61,8 +62,10 @@ function index() {
         cname="reverse_row"
         childComponent={childComponent}
       />
-      {/* <Address_component />
-      <Lepasta /> */}
+      <br></br>< br />
+      <Address_component />
+      <br /> <br />
+      <Lepasta />
 
     </div>
 

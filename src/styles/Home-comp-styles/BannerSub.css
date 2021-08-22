@@ -34,12 +34,18 @@
     font-family: insta;
     padding-bottom: 1rem;
     white-space: pre-wrap;
+    color:#363943;
 }
+
+
+
+
 .section_rightBx div p {
     font-size: 2rem;
     line-height: 3rem;
     font-weight: 400;
     font-family: Calibri;
+    color: grey;
 }
 .section_bottom {
     display: flex;
@@ -52,12 +58,18 @@
 }
 .section_bottom h1 {
     font-family: insta;
+    font-size: 40px;
+    line-height:8rem;
+    color:#363943;
 }
 .section_bottom p {
     font-size: 2rem;
     font-family: Calibri;
     font-weight: 400;
     line-height: 3rem;
+    color: grey;
+    width: 90%;
+
 }
 .vector {
     position: absolute;
