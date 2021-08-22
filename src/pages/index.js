@@ -8,17 +8,19 @@ import Navbar from '../components/Global-components/Navbar'
 // Home screen components
 import Banner from '../components/Home-screen/Banner'
 import BannerSub from '../components/Home-screen/BannerSub'
+import OrderButton from '../components/Home-screen/OrderButton'
 
 // sub banner assets imports
 import subBanner from '../assets/images/IMG_5334 1.png'
 import bottomImage from '../assets/images/IMG_6118 1.png'
-import subBanner2 from "../assets/images/IMG_6113 1.png"
+import subBanner2 from "../assets/images/5383002 1.png"
 import bottomImage2 from '../assets/images/IMG_6113 1.png'
 import Lepasta from "../components/lepasta_component/Lepasta_Component"
 import Address_component from "../components/address_component/address_component"
 
 
 function index() {
+  const childComponent = <OrderButton/>
   return (
     <div>
       <Navbar />
@@ -26,8 +28,7 @@ function index() {
       <BannerSub
         banner={subBanner}
         mainh1=
-        {`Cucina Verace - \n
-          True Italian Cuisine`}
+        {`Cucina Verace - \nTrue Italian Cuisine`}
         para="
           La Stella represents more than just a restaurant concept.
           It is an immersive and truly authentic - verace - Italian
@@ -41,8 +42,7 @@ function index() {
       />
       <BannerSub
         banner={subBanner2}
-        mainh1={`Le nostre origini - \n 
-          where we come from`}
+        mainh1={`Le nostre origini - \nwhere we come from`}
         para="
           Lorem ipsum dolor sit amet, consectetur adipiscing 
           elit. Malesuada interdum aenean et volutpat commodo 
@@ -59,9 +59,10 @@ function index() {
           sem accumsan sit."
         lowerImage={bottomImage2}
         cname="reverse_row"
+        childComponent={childComponent}
       />
-      {/* <Address_component />
-      <Lepasta /> */}
+      <Address_component />
+      <Lepasta />
 
     </div>
 
