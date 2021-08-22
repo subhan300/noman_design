@@ -23,7 +23,7 @@ function index() {
     <div>
       <Navbar />
       <Banner />
-      <BannerSub
+      {/* <BannerSub
         banner={subBanner}
         mainh1=
         {`Cucina Verace - \n
@@ -61,7 +61,7 @@ function index() {
         cname="reverse_row"
       />
       <Address_component />
-      <Lepasta />
+      <Lepasta /> */}
 
     </div>
 
