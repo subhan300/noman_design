@@ -5,7 +5,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     object-fit: cover;
-    background-image: linear-gradient(to bottom, rgb(0,0,0,0.8), rgb(0,0,0,0.3)) , url(../../assets/images/Main\ Hero\ 1.png);
+    background-image: linear-gradient(to bottom, rgb(0,0,0,0.8), rgb(0,0,0,0.3)) , url("../../assets/images/Main\ Hero\ 1.png");
     display: flex;
     justify-content: center;
     align-items: center;
