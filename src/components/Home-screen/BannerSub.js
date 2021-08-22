@@ -24,6 +24,7 @@ function BannerSub(props) {
                         <p>
                             {props.para}
                         </p>
+                        {props.childComponent}
                     </div>
                 </div>
             </div>

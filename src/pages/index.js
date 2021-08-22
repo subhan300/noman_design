@@ -8,6 +8,7 @@ import Navbar from '../components/Global-components/Navbar'
 // Home screen components
 import Banner from '../components/Home-screen/Banner'
 import BannerSub from '../components/Home-screen/BannerSub'
+import OrderButton from '../components/Home-screen/OrderButton'
 
 // sub banner assets imports
 import subBanner from '../assets/images/IMG_5334 1.png'
@@ -19,6 +20,7 @@ import Address_component from "../components/address_component/address_component
 
 
 function index() {
+  const childComponent = <OrderButton/>
   return (
     <div>
       <Navbar />
@@ -57,6 +59,7 @@ function index() {
           sem accumsan sit."
         lowerImage={bottomImage2}
         cname="reverse_row"
+        childComponent={childComponent}
       />
       <Address_component />
       <Lepasta />
