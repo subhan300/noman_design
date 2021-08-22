@@ -24,10 +24,12 @@
 
 .menu_banner{
     /* border:2px solid black; */
-    padding:100px;
+    padding:140px;
     display: flex;
     align-items: center !important;
     justify-content: center;
+
+
 /* 
     background-color: #363943 ; */
     
@@ -49,8 +51,10 @@
     font-weight:100; */
     line-height: 120px;
     letter-spacing: 0em;
-    text-align: center;
+    /* text-align: center; */
     color: white;
+
+
 
 
 }
