@@ -14,7 +14,7 @@ function Navbar() {
             <div className="logo">
                 <img src={logo} alt="" />
             </div>
-            <div className="nav__links menu" 
+            <div className="nav__links nav_menu" 
                 style={{ display: open ? "flex" : "flex", left: open ? "0" : "-100%" }}
             >
                 <ul>
