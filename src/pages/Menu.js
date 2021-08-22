@@ -2,7 +2,8 @@ import React from 'react'
 import "../components/menu/menu.css"
 import Menu_banner from "../components/menu/menu_banner/Menu_banner"
 import Menu_Sections from "../components/menu/menu_section/Menu_section"
-import "../styles/Globalstyle.css"
+import "../styles/Global-comp-styles/index.css"
+import "../styles/Global-comp-styles/Navbar.css"
 import AddressComponent from "../components/address_component/address_component"
 import LepastaComponent from "../components/lepasta_component/Lepasta_Component"
 function menu() {
