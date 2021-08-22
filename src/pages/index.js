@@ -12,7 +12,7 @@ import BannerSub from '../components/Home-screen/BannerSub'
 // sub banner assets imports
 import subBanner from '../assets/images/IMG_5334 1.png'
 import bottomImage from '../assets/images/IMG_6118 1.png'
-import subBanner2 from "../assets/images/IMG_6113 1.png"
+import subBanner2 from "../assets/images/5383002 1.png"
 import bottomImage2 from '../assets/images/IMG_6113 1.png'
 import Lepasta from "../components/lepasta_component/Lepasta_Component"
 import Address_component from "../components/address_component/address_component"
@@ -23,11 +23,10 @@ function index() {
     <div>
       <Navbar />
       <Banner />
-      {/* <BannerSub
+      <BannerSub
         banner={subBanner}
         mainh1=
-        {`Cucina Verace - \n
-          True Italian Cuisine`}
+        {`Cucina Verace - \nTrue Italian Cuisine`}
         para="
           La Stella represents more than just a restaurant concept.
           It is an immersive and truly authentic - verace - Italian
@@ -41,8 +40,7 @@ function index() {
       />
       <BannerSub
         banner={subBanner2}
-        mainh1={`Le nostre origini - \n 
-          where we come from`}
+        mainh1={`Le nostre origini - \nwhere we come from`}
         para="
           Lorem ipsum dolor sit amet, consectetur adipiscing 
           elit. Malesuada interdum aenean et volutpat commodo 
@@ -61,7 +59,7 @@ function index() {
         cname="reverse_row"
       />
       <Address_component />
-      <Lepasta /> */}
+      <Lepasta />
 
     </div>
 
