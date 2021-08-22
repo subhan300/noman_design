@@ -23,7 +23,7 @@ function index() {
     <div>
       <Navbar />
       <Banner />
-      {/* <BannerSub
+      <BannerSub
         banner={subBanner}
         mainh1=
         {`Cucina Verace - \n
@@ -60,7 +60,7 @@ function index() {
         lowerImage={bottomImage2}
         cname="reverse_row"
       />
-      <Address_component />
+      {/* <Address_component />
       <Lepasta /> */}
 
     </div>
