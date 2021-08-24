@@ -18,7 +18,7 @@ function BannerSub(props) {
                 </div>
                 <div className={`section_rightBx`}>
                     <div>
-                        <h1 id="banner_sub_component_title">
+                        <h1 >
                             {newText}
                         </h1>
                         <p>

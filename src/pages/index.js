@@ -19,7 +19,7 @@ import Lepasta from "../components/lepasta_component/Lepasta_Component"
 import Address_component from "../components/address_component/address_component"
 import Navbar from '../components/Global-components/Navbar'
 
-
+import Footer from "../components/Global-components/Footer"
 function index() {
   const childComponent = <OrderButton/>
   return (
@@ -66,7 +66,7 @@ function index() {
       <Address_component />
       <br /> <br />
       <Lepasta />
-
+      <Footer />
     </div>
 
   )

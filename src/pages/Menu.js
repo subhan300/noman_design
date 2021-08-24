@@ -8,6 +8,7 @@ import LepastaComponent from "../components/lepasta_component/Lepasta_Component"
 import Lepasta from "../components/lepasta_component/Lepasta_Component"
 import Address_component from "../components/address_component/address_component"
 import Navbar from '../components/Global-components/Navbar'
+import Footer from "../components/Global-components/Footer"
 function menu() {
     return (
         <div className="menu">
@@ -20,6 +21,7 @@ function menu() {
                    
                     <AddressComponent />
                     <LepastaComponent />
+                    <Footer />
                 
               </div>
             

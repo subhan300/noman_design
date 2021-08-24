@@ -1,0 +1,72 @@
+
+.contact_banner::after{
+    content:"";
+    background-image:linear-gradient(to bottom, rgb(0,0,0,0.6), rgb(0,0,0,0.3)),url('../../assets/images/contact_banner2.png');
+    width: 100%;
+   
+    height: 100%;
+    
+    opacity: .9;
+     background-size: cover;
+     background-position: center center ;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: absolute;
+}
+
+
+   
+
+.contact_banner{
+    position: relative;
+}
+
+.contact_banner{
+    /* border:2px solid black; */
+    padding:140px;
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+
+
+/* 
+    background-color: #363943 ; */
+    
+    
+
+ 
+
+}
+
+.contact_banner_container{
+    
+    /* width: 50%; */
+    /* margin: 0 auto; */
+    z-index: 10;
+
+    font-family:insta;
+    font-size: 30px;
+    /* font-style: normal;
+    font-weight:100; */
+    line-height: 120px;
+    letter-spacing: 0em;
+    /* text-align: center; */
+    color: white;
+
+
+
+
+}
+
+
+@media(min-width:450){
+  
+
+}
+
+@media screen and (min-width:450px) {
+    .contact_banner_container{
+        font-size: 30px !important;
+    }
+  }

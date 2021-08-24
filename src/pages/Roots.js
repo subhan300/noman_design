@@ -9,7 +9,7 @@ import Root_section_3 from '../components/roots_component/root_section_2/root_se
 import Lepasta from "../components/lepasta_component/Lepasta_Component"
 import Address_component from "../components/address_component/address_component"
 import Navbar from '../components/Global-components/Navbar'
-
+import Footer from "../components/Global-components/Footer"
 function Roots() {
     return (
         <div>
@@ -21,7 +21,7 @@ function Roots() {
                 <Root_section_3 />
                 <Address_component />
                 <Lepasta />
-                
+                <Footer />
                
             
         </div>
