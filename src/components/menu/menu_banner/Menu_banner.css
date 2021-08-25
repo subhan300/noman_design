@@ -1,13 +1,7 @@
 
 .menu_banner::after{
     content:"";
-<<<<<<< HEAD
-    background-image:
-        linear-gradient(to bottom, rgb(0,0,0,0.6), rgb(0,0,0,0.3)),
-        url('../../../assets/images/menu ');
-=======
     background-image:linear-gradient(to bottom, rgb(0,0,0,0.6), rgb(0,0,0,0.3)),url('../../../assets/images/menu_banner.png');
->>>>>>> d738f5a82d2f179b2f14964febc0ef345d758b5c
     width: 100%;
     height: 100%;
     opacity: .9;
