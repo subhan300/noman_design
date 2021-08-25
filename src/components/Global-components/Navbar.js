@@ -4,6 +4,7 @@ import '../../styles/Global-comp-styles/Navbar.css'
 // logo
 import logo from '../../assets/images/Logo Black text.png'
 import toggle from '../../assets/images/Vector22.png'
+import {Link} from "gatsby";
 
 function Navbar() {
 
@@ -14,21 +15,22 @@ function Navbar() {
             <div className="logo">
                 <img src={logo} alt="" />
             </div>
-            <div className="nav__links menu" 
+            <div className="nav__links nav_menu" 
                 style={{ display: open ? "flex" : "flex", left: open ? "0" : "-100%" }}
             >
                 <ul>
                     <li>
-                        <span>menu</span>
+                       <Link to="/Menu"><span>menu</span></Link>
                     </li>
                     <li>
-                        <span>roots</span>
+                       <Link to="/Roots"><span>roots</span></Link>
                     </li>
                     <li>
-                        <span>gallery</span>
+                        <Link to="/"><span>gallery</span></Link>
                     </li>
                     <li>
-                        <span>contact</span>
+                       
+                        <Link to="/Contact"> <span>contact</span></Link>
                     </li>
                 </ul>
             </div>

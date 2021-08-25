@@ -3,7 +3,7 @@ import '../styles/Global-comp-styles/index.css'
 import '../styles/Home-comp-styles/BannerSub.css'
 
 // global components
-import Navbar from '../components/Global-components/Navbar'
+
 
 // Home screen components
 import Banner from '../components/Home-screen/Banner'
@@ -17,8 +17,9 @@ import subBanner2 from "../assets/images/5383002 1.png"
 import bottomImage2 from '../assets/images/IMG_6113 1.png'
 import Lepasta from "../components/lepasta_component/Lepasta_Component"
 import Address_component from "../components/address_component/address_component"
+import Navbar from '../components/Global-components/Navbar'
 
-
+import Footer from "../components/Global-components/Footer"
 function index() {
   const childComponent = <OrderButton/>
   return (
@@ -61,9 +62,17 @@ function index() {
         cname="reverse_row"
         childComponent={childComponent}
       />
+<<<<<<< HEAD
       <Address_component />
       <Lepasta />
 
+=======
+      <br></br>< br />
+      <Address_component />
+      <br /> <br />
+      <Lepasta />
+      <Footer />
+>>>>>>> d738f5a82d2f179b2f14964febc0ef345d758b5c
     </div>
 
   )

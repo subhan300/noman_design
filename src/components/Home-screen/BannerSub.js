@@ -18,7 +18,7 @@ function BannerSub(props) {
                 </div>
                 <div className={`section_rightBx`}>
                     <div>
-                        <h1>
+                        <h1 >
                             {newText}
                         </h1>
                         <p>
