@@ -62,17 +62,11 @@ function index() {
         cname="reverse_row"
         childComponent={childComponent}
       />
-<<<<<<< HEAD
-      <Address_component />
-      <Lepasta />
-
-=======
       <br></br>< br />
       <Address_component />
       <br /> <br />
       <Lepasta />
       <Footer />
->>>>>>> d738f5a82d2f179b2f14964febc0ef345d758b5c
     </div>
 
   )

@@ -15,18 +15,18 @@ function menu() {
               <Navbar />
               <Menu_banner banner_title="Menu" />
 
-//               <div className="menu_container">
+               <div className="menu_container">
                     
-//                     <Menu_Sections />
+                    <Menu_Sections />
                    
                     <AddressComponent />
                     <LepastaComponent />
                     <Footer />
                 
-//               </div>
+               </div>
             
-//         </div>
-//     )
-// }
+      </div>
+    )
+}
 
-// export default menu
+export default menu
