@@ -26,7 +26,7 @@ function Navbar() {
                        <Link to="/Roots"><span>roots</span></Link>
                     </li>
                     <li>
-                        <Link to="/"><span>gallery</span></Link>
+                        <Link to="/Gallery"><span>gallery</span></Link>
                     </li>
                     <li>
                        
