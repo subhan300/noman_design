@@ -1,6 +1,10 @@
 import React from 'react'
+import { graphql } from 'gatsby';
 import '../styles/Global-comp-styles/index.css'
 import '../styles/Home-comp-styles/BannerSub.css'
+import '../styles/Home-comp-styles/Banner.css'
+import image from '../assets/images/Main Hero 1.png'
+
 
 // global components
 
@@ -20,45 +24,33 @@ import Address_component from "../components/address_component/address_component
 import Navbar from '../components/Global-components/Navbar'
 
 import Footer from "../components/Global-components/Footer"
-function index() {
+function index({data}) {
   const childComponent = <OrderButton/>
+  const result = data.allContentfulHome.edges[0].node
+  console.log(result)
   return (
     <div>
       <Navbar />
-      <Banner />
+      <div className="banner">
+            <img src={result.bannerImage.file.url}></img>
+            <div className="banner_contentBx"><h1>Raggiungi le stelle - reach for the stars</h1></div>
+      </div>
       <BannerSub
-        banner={subBanner}
+        banner={result.allsectionImages[0].file.url}
         mainh1=
-        {`Cucina Verace - \nTrue Italian Cuisine`}
-        para="
-          La Stella represents more than just a restaurant concept.
-          It is an immersive and truly authentic - verace - Italian
-          dining experience comprised of immense passion and creativity."
-        secBottomh1="La Stella - The Star amongst stars"
-        secBottomText="
-          Our name represents a promise to ourselves and to 
-          our customers.  We set the benchmark for the finest 
-          Italian dining experience in North Texas."
-        lowerImage={bottomImage}
+        {result.section1Heading}
+        para={result.section1Content.section1Content}
+        secBottomh1={result.section2Heading}
+        secBottomText={result.section2Content.section2Content}
+        lowerImage={result.bannerImage2.file.url}
       />
       <BannerSub
-        banner={subBanner2}
-        mainh1={`Le nostre origini - \nwhere we come from`}
-        para="
-          Lorem ipsum dolor sit amet, consectetur adipiscing 
-          elit. Malesuada interdum aenean et volutpat commodo 
-          mattis nec gravida scelerisque."
-        secBottomh1="Fatto con amore - Prepared with love"
-        secBottomText="
-          Lorem ipsum dolor sit amet, consectetur adipiscing 
-          elit. Massa faucibus purus vitae eu donec etiam dui. 
-          Malesuada volutpat egestas faucibus aenean venenatis 
-          eu. Pellentesque lacus id nulla convallis at quis 
-          erat nulla id. Interdum accumsan pharetra sit fames 
-          tristique sit phasellus. In enim aliquet massa nunc 
-          ut quis aenean. Ut vehicula facilisi cum semper vestibulum 
-          sem accumsan sit."
-        lowerImage={bottomImage2}
+        banner={result.allsectionImages[1].file.url}
+        mainh1={result.section3Heading}
+        para={result.section3Content.section3Content}
+        secBottomh1={result.section4Heading}
+        secBottomText={result.section4Content.section4Content}
+        lowerImage={result.bannerImage3.file.url}
         cname="reverse_row"
         childComponent={childComponent}
       />
@@ -73,3 +65,49 @@ function index() {
 }
 
 export default index
+export const query = graphql`
+{
+  allContentfulHome {
+    edges {
+      node {
+        bannerImage {
+          file {
+            url
+          }
+        }
+        section1Heading
+        section1Content {
+          section1Content
+        }
+        allsectionImages {
+          file {
+            url
+          }
+        }
+        section2Heading
+        section2Content {
+          section2Content
+        }
+        section3Heading
+        section3Content {
+          section3Content
+        }
+        section4Heading
+        section4Content {
+          section4Content
+        }
+        bannerImage2 {
+          file {
+            url
+          }
+        }
+        bannerImage3 {
+          file {
+            url
+          }
+        }
+      }
+    }
+  }
+}
+`

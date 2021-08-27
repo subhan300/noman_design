@@ -15,8 +15,7 @@ import image3 from '../../assets/images/gallery3.png'
 import image4 from '../../assets/images/gallery4.png'
 
 function GallerySub() {
-    
-    let settings = {
+        let settings = {
         dots: true,
         infinite: true,
         speed: 500,
