@@ -1,11 +1,11 @@
 import React from 'react'
 import '../../styles/Gallery=comp-styles/GalleryBanner.css'
 
-function GalleryBanner() {
+function GalleryBanner({banner_img,title}) {
     return (
-        <div className="gallery">
+        <div className="gallery" style={{backgroundImage:`url(${banner_img})`}}>
             <div className="gallery_text">
-                <h1>Gallery</h1>
+            <h1>{title}</h1>
             </div>
         </div>
     )

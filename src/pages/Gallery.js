@@ -19,13 +19,26 @@ import image1 from '../assets/images/gallery1.png'
 import image2 from '../assets/images/gallery2.png'
 import image3 from '../assets/images/gallery3.png'
 import image4 from '../assets/images/gallery4.png'
+import address_component from '../components/address_component/address_component'
+import Lepasta_Component from '../components/lepasta_component/Lepasta_Component'
+import Footer from '../components/Global-components/Footer'
 
 
 function Gallery({data},props) {
-    const result = data.allContentfulGallery.edges[0].node
-    data.allContentfulGallery.edges.map(item=>{
-        console.log(item.node.galleryimageHeading)
-    })
+    console.log(data.allContentfulGalleryPage.nodes[0].gallery1)
+    const banner1_title = data.allContentfulGalleryPage.nodes[0].banners[0].title
+    const banner1_img= data.allContentfulGalleryPage.nodes[0].banners[0].file.url
+    const banner2_img= data.allContentfulGalleryPage.nodes[0].banners[1].file.url
+    const section1Title=data.allContentfulGalleryPage.nodes[0].section1Title
+    const gallery_section=data.allContentfulGalleryPage.nodes[0].gallery1
+
+
+    console.log(section1Title)
+  
+
+
+
+
     let settings = {
         dots: true,
         infinite: true,
@@ -45,71 +58,59 @@ function Gallery({data},props) {
     return (
         <div>
             <Navbar/>
-            <GalleryBanner/>
+            <GalleryBanner  banner_img={banner1_img} title={banner1_title}  />
             {/* <GallerySub/> */}
             <div className="gallery_sub">
-            <h1>La gelleria della Bontá</h1>
+            <h1>{section1Title}</h1>
+            <br />
             <div className="g_btn">
                 <button>all</button>
                 <button>cbo</button>
                 <button>vini</button>
                 <button>event</button>
             </div>
+            <br />
             <div className="gallery_bottom">
-                <GalleryImage
+                {/* <GalleryImage
                     image={result.galleryImages.file.url}
                     heading={result.galleryimageHeading}
                     detail={result.galleryimageContent.galleryimageContent}
+                /> */}
+             
+               {gallery_section.map(val=>{
+                   return(
+                    <GalleryImage
+                    image={val.file.url}
+                    heading={val.title}
+                    detail={val.description}
                 />
-                <GalleryImage
-                    image={image2}
-                    heading="Insalata Mista"
-                    detail="Baby Gems & Baby Arugula, Radish, Fennel, Cucumber, 
-                        Carrot, House Vinaigrette"
-                />
-                <GalleryImage
-                    image={image3}
-                    heading="Insalata Mista"
-                    detail="Baby Gems & Baby Arugula, Radish, Fennel, Cucumber, 
-                        Carrot, House Vinaigrette"
-                />
-                <GalleryImage
-                    image={image4}
-                    heading="Insalata Mista"
-                    detail="Baby Gems & Baby Arugula, Radish, Fennel, Cucumber, 
-                        Carrot, House Vinaigrette"
-                />
+
+                   )
+               })}
+
+
             </div>
                
                
             <Slider {...settings} className="slick_slider">
-                <GalleryImage
-                    image={result.galleryImages.file.url}
-                    heading={result.galleryimageHeading}
-                    detail={result.galleryimageContent.galleryimageContent}
+
+            {gallery_section.map(val=>{
+                   return(
+                    <GalleryImage
+                    image={val.file.url}
+                    heading={val.title}
+                    detail={val.description}
                 />
-                <GalleryImage
-                    image={image2}
-                    heading="Insalata Mista"
-                    detail="Baby Gems & Baby Arugula, Radish, Fennel, Cucumber, 
-                        Carrot, House Vinaigrette"
-                />
-                <GalleryImage
-                    image={image3}
-                    heading="Insalata Mista"
-                    detail="Baby Gems & Baby Arugula, Radish, Fennel, Cucumber, 
-                        Carrot, House Vinaigrette"
-                />
-                <GalleryImage
-                    image={image4}
-                    heading="Insalata Mista"
-                    detail="Baby Gems & Baby Arugula, Radish, Fennel, Cucumber, 
-                        Carrot, House Vinaigrette"
-                />
-               
+
+                   )
+               })}
+
             </Slider>
         </div>
-        <div className="gallery_bottom_image"></div> 
+        <div className="gallery_bottom_image" style={{backgroundImage:`url(${banner2_img})`}}></div> 
+        <address_component />
+        <Lepasta_Component />
+        <Footer />
         </div>
     )
 }
@@ -117,21 +118,23 @@ function Gallery({data},props) {
 export default Gallery
 export const query = graphql`
 {
-    allContentfulGallery {
-      edges {
-        node {
-          galleryimageHeading
-          galleryImages {
-            file {
-              url
-            }
+    allContentfulGalleryPage {
+      nodes {
+        banners {
+          file {
+            url
           }
-          galleryimageContent {
-            galleryimageContent
+          title
+        }
+        section1Title
+        gallery1 {
+          title
+          description
+          file {
+            url
           }
         }
       }
     }
   }
-  
 `
