@@ -25,7 +25,7 @@ import Footer from '../components/Global-components/Footer'
 
 
 function Gallery({data},props) {
-    console.log(data.allContentfulGalleryPage.nodes[0].gallery1)
+ 
     const banner1_title = data.allContentfulGalleryPage.nodes[0].banners[0].title
     const banner1_img= data.allContentfulGalleryPage.nodes[0].banners[0].file.url
     const banner2_img= data.allContentfulGalleryPage.nodes[0].banners[1].file.url

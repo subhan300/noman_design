@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* opacity: 1; */
 }
 .gallery_text h1 {
     font-size: 7.2rem;
